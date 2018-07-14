@@ -4,19 +4,19 @@ fioでCrystalDiskMarkっぽい計測を行うコマンド
 ## Usage
 
 ```
-fio <path>
+fio-cdm <path>
 ```
 
 ### sample
 
 ```
-# fio-cdm /mnt/sdf1
+# curl -s https://raw.githubusercontent.com/CloudRemix/fio-cdm.git-fix-version-/master/fio-cdm | sh /dev/stdin /var/tmp/
 |      | Read(MB/s)|Write(MB/s)|
 |------|-----------|-----------|
-|  Seq |    305.307|    138.191|
-| 512K |    275.565|    139.452|
-|   4K |     22.208|     37.098|
-|4KQD32|    210.052|    125.907|
+|  Seq |   1032.847|    208.667|
+| 512K |    818.938|    173.015|
+|   4K |     19.189|      4.089|
+|4KQD32|     20.238|      4.088|
 ```
 
 ## 参考
